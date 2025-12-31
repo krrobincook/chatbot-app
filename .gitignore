@@ -1,0 +1,9 @@
+# Backend dependencies
+backend/node_modules/
+
+# Environment variables
+backend/.env
+
+# Optional (global safety)
+.env
+node_modules/
