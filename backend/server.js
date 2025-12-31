@@ -1,11 +1,18 @@
 import express from 'express'
 import generate from './chatbot.js'
 import cors from 'cors'
+import dotenv from 'dotenv'
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3001
 
 app.use(express.json())
-app.use(cors())
+dotenv.config()
+
+app.use(cors({
+  origin: "*", // or your frontend URL
+  methods: ["GET", "POST"],
+}));
+
 app.get('/', (req, res) => {
   res.send('Welcome to chat-bot backend')
 })
