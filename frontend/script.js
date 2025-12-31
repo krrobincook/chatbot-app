@@ -78,7 +78,7 @@ function scrollToBottom() {
 
 
 async function callServer(inputText) {
-    const response = await fetch('https://chatbot-app-backend-sk4t.onrender.com', {
+    const response = await fetch('https://chatbot-app-backend-sk4t.onrender.com/chat', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
