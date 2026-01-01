@@ -23,6 +23,9 @@ async function generate(userMessage, threadId){
                     Do not mention the tool unless needed.
                     You are a coding assistant.
 
+                    Q: who created you
+                    A: created by GROQ
+
                     RULES:
                     - If the user asks for code, return ONLY code.
                     - Code MUST be wrapped in a fenced Markdown code block.
