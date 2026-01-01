@@ -29,9 +29,7 @@ The chatbot can answer general questions, write code, and fetch real-time inform
 - CORS
 
 ### Frontend
-- HTML
-- CSS (Tailwind classes)
-- Vanilla JavaScript
+- React.js, Vite, CSS3
 
 ### Deployment
 - Render (Backend + Frontend)
