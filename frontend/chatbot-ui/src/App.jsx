@@ -28,8 +28,9 @@ export default function App() {
     setIsTyping(true);
 
     try {
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001/chat";
       const res = await fetch(
-        "https://chatbot-app-backend-sk4t.onrender.com/chat",
+        apiUrl,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
