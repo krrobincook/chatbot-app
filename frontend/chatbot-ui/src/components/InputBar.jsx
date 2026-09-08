@@ -29,7 +29,7 @@ export default function InputBar({ value, setValue, sendMessage }) {
             className="send-btn"
             onClick={sendMessage}
           >
-            ➤
+           ➤
           </button>
         </div>
       </div>

@@ -2,8 +2,7 @@ import { useState } from "react";
 import ChatContainer from "./components/ChatContainer";
 import InputBar from "./components/InputBar";
 
-const THREAD_ID =
-  Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+const THREAD_ID = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 
 export default function App() {
   const [messages, setMessages] = useState([
@@ -35,8 +34,8 @@ export default function App() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            threadId: THREAD_ID,
-            message: userText,
+          threadId: THREAD_ID,
+          message: userText,
           }),
         }
       );
